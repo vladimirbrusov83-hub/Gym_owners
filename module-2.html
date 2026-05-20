@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 2 — Member Intake Assistant | Build with Claude for Gym Owners</title>
+  <meta name="description" content="Build a member intake assistant your front desk uses to onboard new members and hand the coaching staff a clean summary.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Vladimir Brusov</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="module-1.html">Module 1 — Start Here</a></li>
+      <li><a href="module-2.html" class="active">2 · Intake</a></li>
+      <li><a href="module-3.html">3 · Conversations</a></li>
+      <li><a href="module-4.html">4 · Comms</a></li>
+      <li><a href="module-5.html">★ Bonus</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="module-1.html">Module 1 — Start Here</a>
+    <a href="module-2.html" class="active">Module 2 — Member Intake Assistant</a>
+    <a href="module-3.html">Module 3 — Difficult Conversations</a>
+    <a href="module-4.html">Module 4 — Member Communication Library</a>
+    <a href="module-5.html">Bonus — Hiring &amp; Staff</a>
+  </div>
+</nav>
+
+<main>
+  <div class="course-byline"><a href="index.html">Build with Claude for Gym Owners</a></div>
+  <span class="module-label">Module 2</span>
+  <h1>Member Intake Assistant</h1>
+  <p class="lead">A Claude Project your front desk uses to onboard every new member — collects their goals, history, and limitations, then hands the coaching staff a summary that takes 30 seconds to read.</p>
+
+  <h2>The problem this solves</h2>
+
+  <p>Every gym has some version of this problem. A new member walks in. The front desk person greets them, hands them a paper form or fumbles through a conversation, and somewhere between "what are your goals" and "do you have any injuries" things get inconsistent. One staff member asks great questions. Another forgets half of them. The coaching staff gets handed either too much information or not enough, with no structure.</p>
+
+  <p>By the time a coach actually sees that new member, they might know nothing about them — or they are reading a paragraph of disorganized notes jotted down between two other conversations.</p>
+
+  <p>This tool fixes that. It gives every new member the same quality intake conversation, every time, regardless of who is working the front desk. And it hands the coaching staff a clean, consistent summary they can read in 30 seconds before walking onto the floor.</p>
+
+  <h2>How it works</h2>
+
+  <p>You create a Claude Project and paste the instructions below into it. From that point on, when a new member comes in, the front desk person opens that Project on any device — a phone, a tablet, a computer — starts a new conversation, and types "new member." Claude takes it from there. It asks the intake questions one at a time, in a friendly tone, and when the conversation is done, it produces a formatted member summary your coaching staff can use immediately.</p>
+
+  <p>The entire conversation stays inside Claude. There is nothing to save, nothing to file, nothing to upload. When the intake is done, the front desk person can copy the summary into whatever system you use — a Google Doc, a notes app, an email to the head coach — and start fresh with the next member.</p>
+
+  <h2>Setting it up</h2>
+
+  <ol class="steps">
+    <li>
+      <div>
+        <strong>Open Claude and go to Projects</strong>
+        In the left sidebar, click "Projects," then "New Project." Name it something clear — "Member Intake" works well.
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Open Project Instructions</strong>
+        Inside the Project, find the "Project Instructions" section. This is where Claude gets its standing instructions — the rules it follows every time someone uses this Project.
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Customize the prompt</strong>
+        Copy the prompt below. Before you paste it, replace the placeholder text: <span class="custom-note">[GYM NAME]</span> with your gym's actual name, and <span class="custom-note">[LIST YOUR SERVICES]</span> with a short list of the programs or services you offer (for example: "general fitness classes, personal training, powerlifting coaching, open gym"). Keep everything else exactly as written.
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Paste and save</strong>
+        Paste the customized prompt into the Project Instructions field and save. That is the entire setup.
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Test it</strong>
+        Start a new conversation inside the Project and type "new member." Claude will begin the intake immediately. Run through it yourself once, using a fictional member, to make sure it works the way you expect before your staff uses it.
+      </div>
+    </li>
+  </ol>
+
+  <h2>The prompt</h2>
+
+  <p>Copy this exactly. Replace the two placeholders with your information, then paste into Project Instructions.</p>
+
+  <div class="prompt-block">
+    <pre>You are the member intake assistant for [GYM NAME]. Your job is to onboard new members in a friendly, professional, and efficient way.
+
+When someone starts a conversation with you, assume they are a new member arriving at the front desk. Begin the intake immediately.
+
+Ask the following questions one at a time. Wait for the person's answer before moving to the next question. Keep your tone warm and encouraging — you represent the gym's first impression.
+
+Questions to ask in order:
+1. Ask for their name and how they heard about the gym.
+2. Ask what brought them in — what are they hoping to achieve? Let them describe it in their own words without rushing them.
+3. Ask about their training history: have they trained in a gym before? If so, what kind of training, and for how long?
+4. Ask about any injuries, physical limitations, or health conditions the coaching staff should be aware of.
+5. Ask what days of the week and times of day they are typically available to train.
+6. Ask whether they prefer working one-on-one with a coach, in a small group, or training more independently.
+
+After collecting all answers, produce two things:
+
+MEMBER SUMMARY
+Write a 4-6 sentence summary a coach could read in 30 seconds. Include: who the member is, their primary goal, their training background, any limitations the coach needs to know about, their availability, and their preference for coaching style. Write it in third person (e.g., "Jordan is a 34-year-old...").
+
+SUGGESTED STARTING POINT
+Based on their answers, recommend which of the following services is the best match and explain why in 2-3 sentences: [LIST YOUR SERVICES]
+
+After producing the summary, say: "I'll make sure this gets to our coaching team before your first session. Welcome to [GYM NAME] — we're glad you're here."
+
+Format the output clearly with the headings MEMBER SUMMARY and SUGGESTED STARTING POINT so it is easy to copy and share with staff.</pre>
+  </div>
+
+  <h2>What the output looks like</h2>
+
+  <p>Here is an example of a real intake conversation and the summary Claude produces at the end.</p>
+
+  <div class="example-output">
+    <span class="example-label">Example Output — Member Summary</span>
+
+    <p><strong>MEMBER SUMMARY</strong></p>
+
+    <p>Marcus is a 41-year-old who found the gym through a referral from a current member. His primary goal is to build strength and lose about 20 pounds before a family trip in June — he has a clear timeline and is motivated. He has trained on and off for about six years, mostly running and bodyweight work at home, with very limited barbell experience. He has a history of lower back discomfort, which flares up when he sits for long periods at his desk job; no formal diagnosis, but the coaching staff should approach loading progressively and avoid heavy spinal flexion early on. Marcus is available Monday, Wednesday, and Friday mornings before 8am, and occasionally on Saturday. He said he would prefer working with a coach at first because he feels unsure about his technique with weights.</p>
+
+    <p><strong>SUGGESTED STARTING POINT</strong></p>
+
+    <p>Marcus is a strong candidate for personal training rather than group classes given his limited barbell background and the lower back history that will require individualized attention on technique. Starting with two or three coached sessions per week through the end of the month would let the coaching staff assess his movement quality, establish safe loading ranges, and build his confidence before transitioning to a more independent schedule if desired.</p>
+
+    <p><em>I'll make sure this gets to our coaching team before your first session. Welcome to Iron Standard Gym — we're glad you're here.</em></p>
+  </div>
+
+  <h2>Customizing the tone</h2>
+
+  <p>The prompt instructs Claude to be warm and professional. If your gym has a different culture — more direct and no-nonsense, or more casual — you can adjust the tone instruction in the first paragraph. For example:</p>
+
+  <ul>
+    <li>For a no-nonsense strength gym: change "warm and encouraging" to "direct, respectful, and efficient"</li>
+    <li>For a community-focused studio: change it to "friendly, personal, and unhurried"</li>
+    <li>For a performance facility: change it to "professional and performance-focused"</li>
+  </ul>
+
+  <p>Do not change the question sequence or the output format — those are what make the summary consistent and useful.</p>
+
+  <h2>Getting your staff to actually use it</h2>
+
+  <p>The simplest way to deploy this is to add Claude to a shared iPad or tablet at the front desk. Create the Project, bookmark the Project conversation on that device, and show your staff once: "When a new member comes in, open this, type 'new member,' and follow along." That is it. The intake is consistent whether it is their first day or their hundredth.</p>
+
+  <p>If you want to save the summaries somewhere central, have the front desk staff copy the output and paste it into a shared notes app, a Google Doc, or an email to the head coach. It takes 30 seconds and creates a record that follows the member through their time at your gym.</p>
+
+  <div class="module-nav">
+    <a href="module-1.html" class="nav-btn">
+      <span class="nav-btn-label">&larr; Back</span>
+      <span class="nav-btn-title">1 · Start</span>
+    </a>
+    <a href="module-3.html" class="nav-btn next">
+      <span class="nav-btn-label">Next &rarr;</span>
+      <span class="nav-btn-title">Module 3 — Difficult Conversations</span>
+    </a>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

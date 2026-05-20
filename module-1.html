@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 1 — Start Here | Build with Claude for Gym Owners</title>
+  <meta name="description" content="Set up Claude, build your Gym Profile Block, and understand how the tools in this course fit together.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">Vladimir Brusov</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="module-1.html" class="active">Module 1 — Start Here</a></li>
+      <li><a href="module-2.html">2 · Intake</a></li>
+      <li><a href="module-3.html">3 · Conversations</a></li>
+      <li><a href="module-4.html">4 · Comms</a></li>
+      <li><a href="module-5.html">★ Bonus</a></li>
+    </ul>
+    <button class="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="module-1.html" class="active">Module 1 — Start Here</a>
+    <a href="module-2.html">Module 2 — Member Intake Assistant</a>
+    <a href="module-3.html">Module 3 — Difficult Conversations</a>
+    <a href="module-4.html">Module 4 — Member Communication Library</a>
+    <a href="module-5.html">Bonus — Hiring &amp; Staff</a>
+  </div>
+</nav>
+
+<main>
+  <div class="course-byline"><a href="index.html">Build with Claude for Gym Owners</a></div>
+  <span class="module-label">Module 1</span>
+  <h1>Start Here</h1>
+  <p class="lead">Set up Claude, build your Gym Profile Block, and understand how the tools in this course work together. This module produces the one thing every other module depends on.</p>
+
+  <h2>What does "building with Claude" mean?</h2>
+
+  <p>It means describing a problem you have in plain language — and letting Claude turn that description into a working tool. You do not write code. You do not configure software. You explain what you need, Claude figures out how to do it, and you end up with something your staff can use on Monday.</p>
+
+  <p>That is the whole skill: knowing your problem clearly enough to describe it well.</p>
+
+  <p>For most of the history of software, there was a wall between people who could build tools and people who needed them. You either learned to code, hired someone who did, or you waited. That wall is coming down fast. Tools that used to require a developer and three weeks of back-and-forth can now be built in an afternoon by someone who has never written a line of code.</p>
+
+  <p>Gym owners deal with problems that technology has mostly ignored — the intake that is inconsistent, the hard conversation nobody prepared you for, the communication that falls through the cracks. None of these need a complex app. They need clear thinking and the right words — and that is exactly what Claude is built for.</p>
+
+  <h2>Why this works right now</h2>
+
+  <p>Claude — the AI model you will use in this course — has crossed a threshold that matters for your use case. It can understand nuanced, domain-specific instructions. It remembers context within a conversation. It can produce structured output your staff can actually use, in a tone that sounds like it came from a real person.</p>
+
+  <p>The tools in this course are not demos. They are practical workflows built for a real gym with real staff who have no interest in learning software.</p>
+
+  <h2>What you will have when you are done</h2>
+
+  <p>By the end of this course you will have four working tools and one foundation:</p>
+
+  <ul>
+    <li><strong>A Gym Profile Block</strong> — built in this module — that teaches Claude who you are. Every tool in this course starts with it.</li>
+    <li><strong>A member intake assistant</strong> — your front desk uses it to onboard every new member and hand the coaching staff a clean summary</li>
+    <li><strong>A difficult conversations toolkit</strong> — scripts and frameworks for cancellations, price increases, member warnings, negative reviews, and staff feedback</li>
+    <li><strong>A member communication library</strong> — prompts for newsletters, check-ins, win-back campaigns, and positive review responses</li>
+    <li><strong>Bonus: a hiring toolkit</strong> — job postings, interview questions, onboarding plans, and offer/rejection messages</li>
+  </ul>
+
+  <p>None of these require a website, a database, or any ongoing technical maintenance. They live inside Claude. Your staff opens it and starts.</p>
+
+  <hr>
+
+  <h2>Setting up Claude</h2>
+
+  <p>You need a Claude account and access to Claude Projects. Here is exactly how to get there.</p>
+
+  <h3>Step 1 — Create your account</h3>
+
+  <ol class="steps">
+    <li>
+      <div>
+        <strong>Go to claude.ai</strong>
+        Open a web browser and go to <strong>claude.ai</strong>. Click "Sign up" in the top right corner.
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Create an account</strong>
+        Enter your email address and create a password. You will get a verification email — click the link in it.
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Choose a plan</strong>
+        The free tier lets you test Claude, but it has usage limits and does not include Projects — the feature you need for Module 2. For the tools in this course, you want <strong>Claude Pro at $20/month</strong>. You can cancel after the weekend if you decide it is not for you, but most gym owners keep it.
+      </div>
+    </li>
+  </ol>
+
+  <h3>Step 2 — Create your first Project</h3>
+
+  <p>Claude Projects are separate workspaces where you can give Claude a specific set of instructions that stay in place across every conversation. Think of it as briefing a staff member once, then having them always remember the job.</p>
+
+  <ol class="steps">
+    <li>
+      <div>
+        <strong>Find the Projects section</strong>
+        In the left sidebar of Claude, look for "Projects." Click it.
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Create a new Project</strong>
+        Click "New Project." Give it a name — something like "Member Intake" for the first one you will build in Module 2.
+      </div>
+    </li>
+    <li>
+      <div>
+        <strong>Find the Project Instructions field</strong>
+        Inside the Project, there is a section called "Project Instructions" or "Custom Instructions." This is where you paste the prompts from this course. Module 2 gives you the exact text.
+      </div>
+    </li>
+  </ol>
+
+  <div class="callout accent">
+    <p><strong>That is all the technical setup you need.</strong> If you have an account and can create a Project, you are ready. Everything else in this course is filling in a form, copying a prompt, and pressing enter.</p>
+  </div>
+
+  <hr>
+
+  <h2>Your Gym Profile Block — the foundation everything else builds on</h2>
+
+  <p>Here is the problem with generic AI tools: they give generic answers. You ask Claude to help you respond to a cancellation, and it produces something that could have come from any gym in any city. That is not useful.</p>
+
+  <p>The fix is simple. Before every task in this course, you give Claude a short block of text that describes your gym — your name, your training approach, your tone, your policies. Once Claude has that context, everything it produces is specific to you.</p>
+
+  <p>This block is called your <strong>Gym Profile Block</strong>. You build it once, right now, and paste it into every prompt throughout the course. It is the single most important thing in this module.</p>
+
+  <h3>How to build your Gym Profile Block</h3>
+
+  <p>Open Claude and start a new conversation. Copy the prompt below, fill in every section with your real information, paste it in, and press enter. Claude will produce a formatted Gym Profile Block you can save and reuse.</p>
+
+  <div class="prompt-block">
+    <pre>Help me build a Gym Profile Block I can paste at the start of future prompts so Claude always understands the context of my gym.
+
+Here is my information:
+
+Gym name: [YOUR GYM NAME]
+City and state: [CITY, STATE]
+
+Training approach: [2–3 sentences describing what your gym does and how you train. Example: "We are a strength-first gym built around barbell training — squat, deadlift, press, and row. We run 4-week programming blocks and prioritize technique and consistent progress over intensity. Our members train 3–4 times per week and are not competitive athletes."]
+
+Who our members are: [1–2 sentences. Example: "Most of our members are working adults aged 25–50 who want to get stronger, look better, and feel capable. They have jobs and families and are serious about training but not obsessed with it."]
+
+Our tone as a gym: [Choose one and add any nuance: warm and community-focused / direct and no-nonsense / high-energy and motivating / professional and performance-focused. Example: "Direct and honest — we do not oversell or use hype language, but we genuinely care about members and it shows."]
+
+Services we offer: [List your membership types or programs. Example: "Open gym access, coached small group classes, personal training, online programming for remote members."]
+
+Key policies:
+- Cancellation policy: [YOUR POLICY — e.g., "30 days written notice required"]
+- Membership freeze policy: [YOUR POLICY — e.g., "Up to 60 days per year, rate locked"]
+- Trial or intro offer: [YOUR OFFER — e.g., "Free first class" or "7-day trial for $30" or "none"]
+
+Owner/head coach name: [YOUR NAME]
+Other key staff (optional): [NAMES AND ROLES]
+
+Please format this as a clean, ready-to-paste Gym Profile Block I can drop into future prompts.</pre>
+  </div>
+
+  <div class="callout accent">
+    <p><strong>Save what Claude gives you.</strong> Copy the output and paste it into a note on your phone, a Google Doc, or a pinned message in your staff chat. You will use it in every module. The more accurate your inputs, the better every tool in this course will perform.</p>
+  </div>
+
+  <h2>How to use this course</h2>
+
+  <p>Each module is one tool. Read the explanation so you understand what the tool does and why it matters. Then follow the setup steps, fill in your real information, and test it with an actual example from your gym. Do not use fake inputs — you want to see how it performs on your real problems.</p>
+
+  <p>Every prompt has placeholder text written like this: <span class="custom-note">[GYM NAME]</span> or <span class="custom-note">[PASTE YOUR GYM PROFILE HERE]</span>. Replace the placeholders before you paste. Everything else stays as written.</p>
+
+  <p>Most people finish all three modules in four to six hours spread across a weekend. The bonus hiring module adds another two hours if you need it.</p>
+
+  <div class="module-nav">
+    <a href="index.html" class="nav-btn">
+      <span class="nav-btn-label">&larr; Back</span>
+      <span class="nav-btn-title">Home</span>
+    </a>
+    <a href="module-2.html" class="nav-btn next">
+      <span class="nav-btn-label">Next &rarr;</span>
+      <span class="nav-btn-title">Module 2 — Member Intake Assistant</span>
+    </a>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
