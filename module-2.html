@@ -14,7 +14,7 @@
     <a href="index.html" class="nav-brand">Vladimir Brusov</a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="module-1.html">Module 1 — Start Here</a></li>
+      <li><a href="module-1.html">1 · Start</a></li>
       <li><a href="module-2.html" class="active">2 · Intake</a></li>
       <li><a href="module-3.html">3 · Conversations</a></li>
       <li><a href="module-4.html">4 · Comms</a></li>
@@ -26,7 +26,7 @@
   </div>
   <div class="mobile-menu">
     <a href="index.html">Home</a>
-    <a href="module-1.html">Module 1 — Start Here</a>
+    <a href="module-1.html">1 · Start</a>
     <a href="module-2.html" class="active">Module 2 — Member Intake Assistant</a>
     <a href="module-3.html">Module 3 — Difficult Conversations</a>
     <a href="module-4.html">Module 4 — Member Communication Library</a>
@@ -54,25 +54,31 @@
 
   <p>The entire conversation stays inside Claude. There is nothing to save, nothing to file, nothing to upload. When the intake is done, the front desk person can copy the summary into whatever system you use — a Google Doc, a notes app, an email to the head coach — and start fresh with the next member.</p>
 
+  <h2>What a Claude Project is</h2>
+
+  <p>A Claude Project is a separate workspace inside Claude where you write instructions once — and Claude follows them every time, in every conversation. Think of it as training a staff member on exactly how to do their job, then having them always remember it.</p>
+
+  <p>This is different from a regular Claude conversation, where you start from scratch each time. The intake assistant lives in a Project so your front desk never has to think about setup — they just open it and start.</p>
+
   <h2>Setting it up</h2>
 
   <ol class="steps">
     <li>
       <div>
-        <strong>Open Claude and go to Projects</strong>
-        In the left sidebar, click "Projects," then "New Project." Name it something clear — "Member Intake" works well.
+        <strong>Create a new Project</strong>
+        In the left sidebar of Claude, click "Projects," then "New Project." Name it something clear — "Member Intake" works well.
       </div>
     </li>
     <li>
       <div>
-        <strong>Open Project Instructions</strong>
-        Inside the Project, find the "Project Instructions" section. This is where Claude gets its standing instructions — the rules it follows every time someone uses this Project.
+        <strong>Find the Project Instructions field</strong>
+        Inside the Project, there is a section called "Project Instructions" or "Custom Instructions." This is where Claude gets its standing orders — the rules it follows every time someone opens this Project.
       </div>
     </li>
     <li>
       <div>
-        <strong>Customize the prompt</strong>
-        Copy the prompt below. Before you paste it, replace the placeholder text: <span class="custom-note">[GYM NAME]</span> with your gym's actual name, and <span class="custom-note">[LIST YOUR SERVICES]</span> with a short list of the programs or services you offer (for example: "general fitness classes, personal training, powerlifting coaching, open gym"). Keep everything else exactly as written.
+        <strong>Customize the prompt below</strong>
+        Replace <span class="custom-note">[GYM NAME]</span> with your gym's actual name, and <span class="custom-note">[LIST YOUR SERVICES]</span> with your programs (for example: "personal training, small group classes, open gym"). Keep everything else exactly as written.
       </div>
     </li>
     <li>
@@ -84,10 +90,14 @@
     <li>
       <div>
         <strong>Test it</strong>
-        Start a new conversation inside the Project and type "new member." Claude will begin the intake immediately. Run through it yourself once, using a fictional member, to make sure it works the way you expect before your staff uses it.
+        Start a new conversation inside the Project and type "new member." Claude will begin the intake immediately. Run through it yourself once with a fictional member before your staff uses it.
       </div>
     </li>
   </ol>
+
+  <div class="callout accent">
+    <p><strong>Note on the Gym Profile Block:</strong> The prompt below goes into Project Instructions — it is set once and stays. You do not paste your Gym Profile Block here. The Gym Profile Block is for the one-off prompts in Modules 3 and 4, where you paste it fresh each time. This module works differently — Claude learns your gym from the Project Instructions and remembers it automatically.</p>
+  </div>
 
   <h2>The prompt</h2>
 
@@ -136,7 +146,7 @@ Format the output clearly with the headings MEMBER SUMMARY and SUGGESTED STARTIN
 
     <p>Marcus is a strong candidate for personal training rather than group classes given his limited barbell background and the lower back history that will require individualized attention on technique. Starting with two or three coached sessions per week through the end of the month would let the coaching staff assess his movement quality, establish safe loading ranges, and build his confidence before transitioning to a more independent schedule if desired.</p>
 
-    <p><em>I'll make sure this gets to our coaching team before your first session. Welcome to Iron Standard Gym — we're glad you're here.</em></p>
+    <p><em>I'll make sure this gets to our coaching team before your first session. Welcome to Iron Standard — we're glad you're here.</em></p>
   </div>
 
   <h2>Customizing the tone</h2>
@@ -160,7 +170,7 @@ Format the output clearly with the headings MEMBER SUMMARY and SUGGESTED STARTIN
   <div class="module-nav">
     <a href="module-1.html" class="nav-btn">
       <span class="nav-btn-label">&larr; Back</span>
-      <span class="nav-btn-title">1 · Start</span>
+      <span class="nav-btn-title">Module 1 — Start Here</span>
     </a>
     <a href="module-3.html" class="nav-btn next">
       <span class="nav-btn-label">Next &rarr;</span>
